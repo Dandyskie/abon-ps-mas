@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #B71C1C;
+  --color-primary-hover: #9E1A1A;
+  --color-accent: #F9A825;
+  --color-background-warm: #FFFBEA;
+  --color-surface: #FFFFFF;
+  --color-surface-accent: #F5EFEB;
+  --color-text-charcoal: #1F1A17;
+  --color-text-muted: #5F5752;
+  --color-border-warm: #EAE3DE;
+
+  --font-heading: 'Lora', serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+  background-color: var(--color-background-warm);
+  font-family: var(--font-body);
+  color: var(--color-text-charcoal);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
