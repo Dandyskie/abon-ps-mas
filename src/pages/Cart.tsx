@@ -39,10 +39,10 @@ export default function Cart() {
     message += `Mohon info total biaya beserta ongkos kirimnya ya. Terima kasih!`;
 
     const encodedMessage = encodeURIComponent(message);
-    const whatsappNumber = '6281234567890'; // Target WA Number PS MAS
+    const whatsappNumber = '6282225532171'; // Target WA Number PS MAS
 
     // Redirect to WhatsApp API
-    window.open(`https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodedMessage}`, '_blank');
+    window.open(`https://wa.me/${whatsappNumber}?text=${encodedMessage}`, '_blank');
     
     // Clear cart after redirection
     clearCart();
