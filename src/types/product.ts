@@ -5,6 +5,7 @@ export interface ProductVariant {
   weight: string;
   price: number;
   stockStatus: 'tersedia' | 'menipis' | 'habis';
+  image?: string;
 }
 
 export interface Product {

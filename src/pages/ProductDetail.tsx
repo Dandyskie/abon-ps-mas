@@ -57,20 +57,18 @@ export default function ProductDetail() {
       </button>
 
       <div className="grid md:grid-cols-2 gap-8 md:gap-12 bg-white p-5 sm:p-8 md:p-10 rounded-[2.5rem] border border-border-warm shadow-sm items-start">
-        {/* Gallery image */}
-        <div className="space-y-4 w-full">
+        {/* Product Image */}
+        <div className="w-full">
           <motion.div 
             whileHover={{ scale: 1.01 }}
             className="aspect-square bg-background-warm rounded-3xl flex items-center justify-center overflow-hidden shadow-inner relative border border-border-warm"
           >
-            <span className="text-text-muted text-xs font-semibold">{product.name} Preview</span>
+            <img
+              src={selectedVariant.image || product.image}
+              alt={product.name}
+              className="w-full h-full object-cover"
+            />
           </motion.div>
-          
-          <div className="grid grid-cols-3 gap-3">
-            <div className="aspect-square bg-background-warm/60 rounded-2xl border border-border-warm flex items-center justify-center text-[9px] sm:text-[10px] text-text-muted font-black uppercase text-center p-1">Tampak Depan</div>
-            <div className="aspect-square bg-background-warm/60 rounded-2xl border border-border-warm flex items-center justify-center text-[9px] sm:text-[10px] text-text-muted font-black uppercase text-center p-1">Tampak Belakang</div>
-            <div className="aspect-square bg-background-warm/60 rounded-2xl border border-border-warm flex items-center justify-center text-[9px] sm:text-[10px] text-text-muted font-black uppercase text-center p-1">Tekstur Abon</div>
-          </div>
         </div>
 
         {/* Info Details */}
