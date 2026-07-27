@@ -1,4 +1,4 @@
-import { MapPin, Phone, Mail, Clock } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, ExternalLink } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 export default function Contact() {
@@ -32,7 +32,7 @@ export default function Contact() {
               <div>
                 <h4 className="font-bold text-sm text-text-charcoal font-heading">Alamat Toko</h4>
                 <p className="text-text-muted text-xs sm:text-sm mt-1 leading-relaxed font-medium">
-                  Jl. Abon Raya No. 45, Kecamatan Duren Sawit, Jakarta Timur, DKI Jakarta
+                  Jl. Kalimerbau RT03/RW10 Jagalan, kec. Jebres Kota Surakarta, Jawa Tengah 57162
                 </p>
               </div>
             </div>
@@ -41,7 +41,7 @@ export default function Contact() {
               <Phone className="w-5 h-5 text-primary shrink-0 mt-1" />
               <div>
                 <h4 className="font-bold text-sm text-text-charcoal font-heading">Nomor Telepon</h4>
-                <p className="text-text-muted text-xs sm:text-sm mt-1 leading-relaxed font-medium">0812-3456-7890</p>
+                <p className="text-text-muted text-xs sm:text-sm mt-1 leading-relaxed font-medium">081333182841 / (0271)661866</p>
               </div>
             </div>
 
@@ -49,7 +49,7 @@ export default function Contact() {
               <Mail className="w-5 h-5 text-primary shrink-0 mt-1" />
               <div>
                 <h4 className="font-bold text-sm text-text-charcoal font-heading">Email</h4>
-                <p className="text-text-muted text-xs sm:text-sm mt-1 leading-relaxed font-medium">support@psmas.com</p>
+                <p className="text-text-muted text-xs sm:text-sm mt-1 leading-relaxed font-medium">abonsapipsmas@gmail.com</p>
               </div>
             </div>
 
@@ -57,7 +57,7 @@ export default function Contact() {
               <Clock className="w-5 h-5 text-primary shrink-0 mt-1" />
               <div>
                 <h4 className="font-bold text-sm text-text-charcoal font-heading">Jam Operasional</h4>
-                <p className="text-text-muted text-xs sm:text-sm mt-1 leading-relaxed font-medium">Senin - Sabtu: 08.00 - 17.00 WIB</p>
+                <p className="text-text-muted text-xs sm:text-sm mt-1 leading-relaxed font-medium">Senin-Sabtu 07.00 - 16.00<br />Minggu 08.00 - 14.00</p>
               </div>
             </div>
           </div>
@@ -67,12 +67,33 @@ export default function Contact() {
           initial={{ opacity: 0, x: 15 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.05, duration: 0.25 }}
-          className="bg-white p-6 sm:p-8 rounded-[2.5rem] border border-border-warm shadow-sm flex flex-col justify-between"
+          className="bg-white p-6 sm:p-8 rounded-[2.5rem] border border-border-warm shadow-sm flex flex-col justify-between space-y-4"
         >
-          <h2 className="text-2xl font-bold font-heading text-text-charcoal border-b border-border-warm/60 pb-2 mb-4">Lokasi Kami</h2>
-          <div className="bg-background-warm rounded-2xl w-full h-full min-h-[16rem] flex items-center justify-center text-text-muted font-bold text-xs shadow-inner border border-border-warm/40 p-4 text-center">
-            <span>Google Maps Map Container</span>
+          <h2 className="text-2xl font-bold font-heading text-text-charcoal border-b border-border-warm/60 pb-2">Lokasi Kami</h2>
+
+          <div className="bg-background-warm rounded-2xl w-full h-[260px] sm:h-full min-h-[16rem] overflow-hidden shadow-inner border border-border-warm/40 relative">
+            <iframe
+              title="Lokasi Abon PS MAS"
+              src="https://maps.google.com/maps?q=Jl.+Kalimerbau+RT03%2FRW10+Jagalan%2C+kec.+Jebres+Kota+Surakarta%2C+Jawa+Tengah+57162&t=&z=16&ie=UTF8&iwloc=&output=embed"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen={true}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              className="w-full h-full rounded-2xl"
+            />
           </div>
+
+          <a
+            href="https://maps.app.goo.gl/KivubntQTycz5raZ7"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full bg-primary hover:bg-primary-hover text-white text-xs sm:text-sm font-extrabold py-3 px-4 rounded-xl shadow-md hover:shadow-lg active:scale-95 transition-all flex items-center justify-center gap-2 cursor-pointer"
+          >
+            <span>Buka di Google Maps</span>
+            <ExternalLink className="w-4 h-4" />
+          </a>
         </motion.div>
       </div>
     </motion.div>
