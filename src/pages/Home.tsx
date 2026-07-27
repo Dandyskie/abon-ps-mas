@@ -233,7 +233,7 @@ export default function Home() {
             className="aspect-[4/5] w-full max-w-sm rounded-[2rem] overflow-hidden shadow-xl relative border-4 border-white"
           >
             <img
-              src="/public/image/hero-image.png"
+              src="public/image/hero-image.png"
               alt="Abon PS MAS Premium"
               className="w-full h-full object-cover"
             />
