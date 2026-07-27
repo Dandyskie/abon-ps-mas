@@ -34,11 +34,11 @@ export default function About() {
             <div className="flex flex-col sm:flex-row sm:items-center gap-4 text-xs sm:text-sm font-semibold">
               <div className="flex items-center gap-2 text-text-muted">
                 <ShoppingBag className="w-4 h-4 text-primary shrink-0" />
-                <span>Shopee: <a href="https://shopee.co.id/hammamabdurrasyid" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary-hover hover:underline font-extrabold">@hammamabdurrasyid</a></span>
+                <span>Shopee: <a href="https://shopee.co.id/hammamabdurrasyid" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary-hover hover:underline font-extrabold"><u>@hammamabdurrasyid</u></a></span>
               </div>
               <div className="flex items-center gap-2 text-text-muted">
                 <Instagram className="w-4 h-4 text-primary shrink-0" />
-                <span>Instagram: <a href="https://instagram.com/psmas.official" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary-hover hover:underline font-extrabold">@psmas.official</a></span>
+                <span>Instagram: <a href="https://instagram.com/psmas.official" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary-hover hover:underline font-extrabold"><u>@psmas.official</u></a></span>
               </div>
             </div>
           </div>
