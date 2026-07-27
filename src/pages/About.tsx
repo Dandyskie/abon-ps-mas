@@ -38,7 +38,7 @@ export default function About() {
               </div>
               <div className="flex items-center gap-2 text-text-muted">
                 <Instagram className="w-4 h-4 text-primary shrink-0" />
-                <span>Instagram: <a href="https://instagram.com/psmas.official" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary-hover hover:underline font-extrabold">@abonpsmas</a></span>
+                <span>Instagram: <a href="https://www.instagram.com/psmas.official/" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary-hover hover:underline font-extrabold">@abonpsmas</a></span>
               </div>
             </div>
           </div>
