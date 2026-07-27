@@ -8,14 +8,14 @@ export const products: Product[] = [
     category: 'sapi',
     description: 'Abon sapi original berkualitas tinggi yang diolah dari serat daging sapi segar murni pilihan dengan resep warisan khas PS MAS.',
     ingredients: ['Daging Sapi Segar', 'Bawang Merah', 'Bawang Putih', 'Garam', 'Rempah Pilihan'],
-    image: 'https://images.unsplash.com/photo-1544025162-d76694265947?w=600&auto=format&fit=crop&q=80',
-    gallery: ['https://images.unsplash.com/photo-1544025162-d76694265947?w=600&auto=format&fit=crop&q=80'],
+    image: '/assets/abon-sapi.png',
+    gallery: ['/assets/abon-sapi.png'],
     variants: [
-      { id: 'v1_1', weight: '100g', price: 35000, stockStatus: 'tersedia', image: 'https://images.unsplash.com/photo-1544025162-d76694265947?w=600&auto=format&fit=crop&q=80' },
+      { id: 'v1_1', weight: '100g', price: 35000, stockStatus: 'tersedia', image: '/assets/abon-sapi.png' },
       { id: 'v1_2', weight: '250g', price: 82000, stockStatus: 'tersedia', image: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&auto=format&fit=crop&q=80' },
       { id: 'v1_3', weight: '1kg', price: 295000, stockStatus: 'tersedia', image: 'https://images.unsplash.com/photo-1604503468506-a8da13d82791?w=600&auto=format&fit=crop&q=80' },
       { id: 'v1_4', weight: '5kg', price: 1450000, stockStatus: 'tersedia', image: 'https://images.unsplash.com/photo-1582450871972-ab5ca641643d?w=600&auto=format&fit=crop&q=80' },
-      { id: 'v1_5', weight: 'pouch 80g', price: 29000, stockStatus: 'tersedia', image: 'https://images.unsplash.com/photo-1612240498936-65f5101365d2?w=600&auto=format&fit=crop&q=80' },
+      { id: 'v1_5', weight: 'pouch 80g', price: 29000, stockStatus: 'tersedia', image: '/assets/abon-sapi.png' },
       { id: 'v1_6', weight: 'toples 200g', price: 69000, stockStatus: 'tersedia', image: 'https://images.unsplash.com/photo-1536680465769-2365207b035e?w=600&auto=format&fit=crop&q=80' }
     ],
     relatedProductIds: ['2', '3']

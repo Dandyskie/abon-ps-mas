@@ -14,7 +14,7 @@ function FeaturedProductCard({ product, itemVariants }: FeaturedProductCardProps
   const [selectedVariant, setSelectedVariant] = useState(product.variants[0]);
 
   return (
-    <motion.div 
+    <motion.div
       variants={itemVariants}
       whileHover={{ y: -6 }}
       className="bg-white rounded-3xl p-5 border border-border-warm shadow-sm flex flex-col transition-all relative group overflow-hidden"
@@ -48,11 +48,10 @@ function FeaturedProductCard({ product, itemVariants }: FeaturedProductCardProps
               e.preventDefault();
               setSelectedVariant(v);
             }}
-            className={`px-2 py-1.5 border rounded-lg text-[9px] font-black uppercase transition-all cursor-pointer active:scale-95 ${
-              selectedVariant.id === v.id
-                ? 'border-primary bg-primary text-white shadow-sm'
-                : 'border-border-warm bg-background-warm text-text-charcoal hover:border-yellow-500'
-            }`}
+            className={`px-2 py-1.5 border rounded-lg text-[9px] font-black uppercase transition-all cursor-pointer active:scale-95 ${selectedVariant.id === v.id
+              ? 'border-primary bg-primary text-white shadow-sm'
+              : 'border-border-warm bg-background-warm text-text-charcoal hover:border-yellow-500'
+              }`}
           >
             {v.weight}
           </button>
@@ -205,10 +204,11 @@ export default function Home() {
             <Flame className="w-4 h-4 fill-primary" /> Kualitas Premium Tradisional
           </div>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-black text-text-charcoal leading-[1.15] tracking-tight">
-            Kehangatan Cita Rasa <span className="text-primary">Abon Asli</span> PS MAS
+            Mempertahankan Cita Rasa Lintas Generasi <span className="text-primary">Abon Sapi PS MAS</span>
           </h1>
           <p className="text-text-muted text-sm sm:text-base md:text-lg leading-relaxed max-w-xl">
-            Abon Sapi dan Ayam kualitas premium yang diolah secara higienis menggunakan rempah-rempah pilihan warisan keluarga tanpa bahan pengawet.
+            Tidak hanya Abon sapi, UMKM PS Mas juga memproduksi Abon Ayam, Serundeng Kelapa, Dendeng Sapi dan Klengkam Kentang. Tentu menggunakan bahan berkualitas premium, diolah secara higienis
+            dan memadukan rempah-rempah pilihan warisan keluarga, tanpa bahan pengawet.
           </p>
           <div className="flex flex-wrap gap-4 pt-2">
             <Link
@@ -225,22 +225,22 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        
+
         <div className="md:col-span-5 flex justify-center items-center">
-          <motion.div 
+          <motion.div
             whileHover={{ scale: 1.01 }}
             transition={{ type: 'spring', stiffness: 100 }}
             className="aspect-[4/5] w-full max-w-sm rounded-[2rem] overflow-hidden shadow-xl relative border-4 border-white"
           >
-            <img 
-              src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&auto=format&fit=crop&q=80" 
-              alt="Abon PS MAS Premium" 
+            <img
+              src="/public/image/hero-image.png"
+              alt="Abon PS MAS Premium"
               className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/10 to-transparent flex flex-col justify-end p-6 text-white">
+            {/* <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/10 to-transparent flex flex-col justify-end p-6 text-white">
               <span className="text-[10px] uppercase font-black tracking-widest text-accent mb-1">Kemasan Baru</span>
               <h3 className="text-xl font-bold font-heading leading-tight">PS MAS Premium Meat Floss</h3>
-            </div>
+            </div> */}
           </motion.div>
         </div>
       </motion.section>
@@ -256,14 +256,14 @@ export default function Home() {
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
           {categories.map((cat) => (
-            <Link 
-              key={cat.id} 
+            <Link
+              key={cat.id}
               to={`/catalog?category=${cat.id}`}
               className="group relative h-56 sm:h-64 rounded-3xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 active:scale-95 flex flex-col justify-end p-6 text-white"
             >
-              <img 
-                src={cat.img} 
-                alt={cat.name} 
+              <img
+                src={cat.img}
+                alt={cat.name}
                 className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               />
               <div className={`absolute inset-0 bg-gradient-to-t ${cat.color} mix-blend-multiply opacity-80 group-hover:opacity-85 transition-opacity`} />
@@ -280,7 +280,7 @@ export default function Home() {
       </motion.section>
 
       {/* Value Propositions */}
-      <motion.section 
+      <motion.section
         variants={containerVariants}
         className="grid md:grid-cols-3 gap-8 bg-white p-6 sm:p-10 rounded-[2.5rem] border border-border-warm shadow-sm"
       >
@@ -335,7 +335,7 @@ export default function Home() {
             <FeaturedProductCard key={product.id} product={product} itemVariants={itemVariants} />
           ))}
         </div>
-        
+
         <div className="text-center sm:hidden pt-2">
           <Link
             to="/catalog"
@@ -382,7 +382,7 @@ export default function Home() {
 
         {/* Carousel Container */}
         <div className="relative bg-white rounded-3xl border border-border-warm shadow-sm p-6 sm:p-10 flex flex-col justify-between min-h-64 sm:min-h-56">
-          
+
           <div className="overflow-hidden relative flex-grow flex flex-col justify-center">
             <AnimatePresence mode="wait" custom={slideDirection}>
               <motion.div
@@ -437,9 +437,8 @@ export default function Home() {
             {testimonials.map((_, idx) => (
               <span
                 key={idx}
-                className={`h-1.5 rounded-full transition-all duration-300 ${
-                  activeTestimonial === idx ? 'w-4 bg-primary' : 'w-1.5 bg-border-warm'
-                }`}
+                className={`h-1.5 rounded-full transition-all duration-300 ${activeTestimonial === idx ? 'w-4 bg-primary' : 'w-1.5 bg-border-warm'
+                  }`}
               />
             ))}
           </div>

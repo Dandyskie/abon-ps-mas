@@ -18,7 +18,7 @@ export default function Cart() {
 
   const handleCheckout = (e: React.FormEvent) => {
     e.preventDefault();
-    if (!form.nama || !form.telepon || !form.alamat) {
+    if (!form.nama || !form.telepon           || !form.alamat) {
       setError('Harap isi semua kolom formulir untuk melanjutkan pemesanan.');
       return;
     }
@@ -49,6 +49,7 @@ export default function Cart() {
     navigate('/');
   };
 
+                                                                                                                                                                                                                                                                                                                                   
   if (items.length === 0) {
     return (
       <div className="flex justify-center py-10 px-4">
@@ -61,7 +62,7 @@ export default function Cart() {
             <ShoppingBag className="w-10 h-10" />
           </div>
           <div className="space-y-2">
-            <h2 className="text-3xl font-black text-text-charcoal font-heading">Keranjang Kosong</h2>
+            <h2 className="text-3xl font-black teaxt-text-charcoal font-heading">Keranjang Kosong</h2>
             <p className="text-text-muted text-xs sm:text-sm max-w-sm mx-auto leading-relaxed font-medium">
               Anda belum menambahkan produk. Jelajahi katalog abon lezat kami dan buat pesanan pertama Anda!
             </p>
