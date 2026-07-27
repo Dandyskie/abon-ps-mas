@@ -11,7 +11,7 @@ export default function About() {
     >
       <div className="text-center space-y-3">
         <span className="text-xs uppercase font-extrabold tracking-widest text-primary">Tentang Kami</span>
-        <h1 className="text-4xl sm:text-5xl font-black text-text-charcoal font-heading leading-tight">Warisan Rasa <br>PS MAS</br></h1>
+        <h1 className="text-4xl sm:text-5xl font-black text-text-charcoal font-heading leading-tight">Warisan Rasa <br />PS MAS</h1>
         <p className="text-text-muted text-xs sm:text-sm max-w-md mx-auto leading-relaxed font-medium">
           Mengenal lebih dekat perjalanan rasa abon premium khas keluarga Nusantara.
         </p>
@@ -38,7 +38,7 @@ export default function About() {
               </div>
               <div className="flex items-center gap-2 text-text-muted">
                 <Instagram className="w-4 h-4 text-primary shrink-0" />
-                <span>Instagram: <a href="https://www.instagram.com/psmas.official/" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary-hover hover:underline font-extrabold">@abonpsmas</a></span>
+                <span>Instagram: <a href="https://instagram.com/psmas.official" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary-hover hover:underline font-extrabold">@abonpsmas</a></span>
               </div>
             </div>
           </div>
