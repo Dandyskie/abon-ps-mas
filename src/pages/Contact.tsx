@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 export default function Contact() {
   return (
-    <motion.div 
+    <motion.div
       initial={{ opacity: 0, y: 10 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.3 }}
@@ -16,16 +16,16 @@ export default function Contact() {
           Kami siap membantu pesanan Anda. Silakan hubungi kami melalui kontak resmi di bawah ini.
         </p>
       </div>
-      
+
       <div className="grid md:grid-cols-2 gap-8 items-stretch">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, x: -15 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.05, duration: 0.25 }}
           className="bg-white p-6 sm:p-8 rounded-[2.5rem] border border-border-warm shadow-sm space-y-6 flex flex-col justify-between"
         >
           <h2 className="text-2xl font-bold font-heading text-text-charcoal border-b border-border-warm/60 pb-2">Informasi Kontak</h2>
-          
+
           <div className="space-y-5">
             <div className="flex items-start gap-4">
               <MapPin className="w-5 h-5 text-primary shrink-0 mt-1" />
@@ -63,7 +63,7 @@ export default function Contact() {
           </div>
         </motion.div>
 
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, x: 15 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.05, duration: 0.25 }}
