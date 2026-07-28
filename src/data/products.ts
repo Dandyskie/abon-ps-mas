@@ -11,12 +11,10 @@ export const products: Product[] = [
     image: '/assets/abon-sapi.png',
     gallery: ['/assets/abon-sapi.png'],
     variants: [
-      { id: 'v1_1', weight: '100g', price: 35000, stockStatus: 'tersedia', image: '/assets/abon-sapi.png' },
-      { id: 'v1_2', weight: '250g', price: 82000, stockStatus: 'tersedia', image: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&auto=format&fit=crop&q=80' },
-      { id: 'v1_3', weight: '1kg', price: 295000, stockStatus: 'tersedia', image: 'https://images.unsplash.com/photo-1604503468506-a8da13d82791?w=600&auto=format&fit=crop&q=80' },
-      { id: 'v1_4', weight: '5kg', price: 1450000, stockStatus: 'tersedia', image: 'https://images.unsplash.com/photo-1582450871972-ab5ca641643d?w=600&auto=format&fit=crop&q=80' },
-      { id: 'v1_5', weight: 'pouch 80g', price: 29000, stockStatus: 'tersedia', image: '/assets/abon-sapi.png' },
-      { id: 'v1_6', weight: 'toples 200g', price: 69000, stockStatus: 'tersedia', image: 'https://images.unsplash.com/photo-1536680465769-2365207b035e?w=600&auto=format&fit=crop&q=80' }
+      { id: 'v1_1', weight: 'pouch 80g', price: 35000, stockStatus: 'tersedia', image: '/assets/abon-sapi/abon-sapi-original-ps-mas-80g.png' },
+      { id: 'v1_2', weight: '100g', price: 45000, stockStatus: 'tersedia', image: '/assets/abon-sapi/abon-sapi-original-ps-mas-100g.png' },
+      { id: 'v1_3', weight: 'toples 200g', price: 50000, stockStatus: 'tersedia', image: '/assets/abon-sapi/abon-sapi-original-ps-mas-200g.png' },
+      { id: 'v1_4', weight: '250g', price: 60000, stockStatus: 'tersedia', image: '/assets/abon-sapi/abon-sapi-original-ps-mas-250g.png' },
     ],
     relatedProductIds: ['2', '3']
   },
@@ -27,8 +25,8 @@ export const products: Product[] = [
     category: 'sapi',
     description: 'Abon sapi pedas lezat dengan perpaduan racikan cabai asli pilihan dan serat daging sapi murni bertekstur mantap.',
     ingredients: ['Daging Sapi Segar', 'Cabai Alami', 'Bawang Merah', 'Bawang Putih', 'Garam', 'Rempah'],
-    image: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&auto=format&fit=crop&q=80',
-    gallery: ['https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&auto=format&fit=crop&q=80'],
+    image: '/assets/abon-sapi/abon-sapi-original-ps-mas-80g.png',
+    gallery: ['/assets/abon-sapi/abon-sapi-original-ps-mas-80g.png'],
     variants: [
       { id: 'v2_1', weight: '100g', price: 37000, stockStatus: 'tersedia', image: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&auto=format&fit=crop&q=80' },
       { id: 'v2_2', weight: '250g', price: 85000, stockStatus: 'tersedia', image: 'https://images.unsplash.com/photo-1544025162-d76694265947?w=600&auto=format&fit=crop&q=80' },
@@ -46,15 +44,13 @@ export const products: Product[] = [
     category: 'ayam',
     description: 'Abon ayam rasa original gurih manis dengan suwiran daging ayam pilihan yang lezat dan bertekstur lembut.',
     ingredients: ['Daging Ayam Pilihan', 'Bawang Merah', 'Bawang Putih', 'Gula', 'Garam', 'Rempah'],
-    image: 'https://images.unsplash.com/photo-1604503468506-a8da13d82791?w=600&auto=format&fit=crop&q=80',
-    gallery: ['https://images.unsplash.com/photo-1604503468506-a8da13d82791?w=600&auto=format&fit=crop&q=80'],
+    image: '/assets/abon-ayam/abon-ayam-original-ps-mas-80g.png',
+    gallery: ['/assets/abon-ayam/abon-ayam-original-ps-mas-80g.png'],
     variants: [
-      { id: 'v3_1', weight: '100g', price: 28000, stockStatus: 'tersedia', image: 'https://images.unsplash.com/photo-1604503468506-a8da13d82791?w=600&auto=format&fit=crop&q=80' },
-      { id: 'v3_2', weight: '250g', price: 65000, stockStatus: 'tersedia', image: 'https://images.unsplash.com/photo-1544025162-d76694265947?w=600&auto=format&fit=crop&q=80' },
-      { id: 'v3_3', weight: '1kg', price: 230000, stockStatus: 'tersedia', image: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&auto=format&fit=crop&q=80' },
-      { id: 'v3_4', weight: '5kg', price: 1100000, stockStatus: 'tersedia', image: 'https://images.unsplash.com/photo-1582450871972-ab5ca641643d?w=600&auto=format&fit=crop&q=80' },
-      { id: 'v3_5', weight: 'pouch 80g', price: 24000, stockStatus: 'tersedia', image: 'https://images.unsplash.com/photo-1612240498936-65f5101365d2?w=600&auto=format&fit=crop&q=80' },
-      { id: 'v3_6', weight: 'toples 140g', price: 45000, stockStatus: 'tersedia', image: 'https://images.unsplash.com/photo-1536680465769-2365207b035e?w=600&auto=format&fit=crop&q=80' }
+      { id: 'v3_1', weight: 'pouch 80g', price: 28000, stockStatus: 'tersedia', image: '/assets/abon-ayam/abon-ayam-original-ps-mas-80g.png' },
+      { id: 'v3_2', weight: '100g', price: 45000, stockStatus: 'tersedia', image: '/assets/abon-ayam/abon-ayam-original-ps-mas-100g.png' },
+      { id: 'v3_3', weight: 'toples 140g', price: 65000, stockStatus: 'tersedia', image: '/assets/abon-ayam/abon-ayam-original-ps-mas-140g.png' },
+      { id: 'v3_4', weight: '250g', price: 85000, stockStatus: 'tersedia', image: '/assets/abon-ayam/abon-ayam-original-ps-mas-250g.png' },
     ],
     relatedProductIds: ['4', '5']
   },
@@ -65,8 +61,8 @@ export const products: Product[] = [
     category: 'ayam',
     description: 'Abon ayam dengan rasa pedas menggigit berpadu bumbu rempah pilihan yang diolah renyah dan gurih.',
     ingredients: ['Daging Ayam Pilihan', 'Cabai Alami', 'Bawang Merah', 'Bawang Putih', 'Garam', 'Rempah'],
-    image: 'https://images.unsplash.com/photo-1582450871972-ab5ca641643d?w=600&auto=format&fit=crop&q=80',
-    gallery: ['https://images.unsplash.com/photo-1582450871972-ab5ca641643d?w=600&auto=format&fit=crop&q=80'],
+    image: '/assets/abon-ayam/abon-ayam-original-ps-mas-80g.png',
+    gallery: ['/assets/abon-ayam/abon-ayam-original-ps-mas-80g.png'],
     variants: [
       { id: 'v4_1', weight: '100g', price: 30000, stockStatus: 'tersedia', image: 'https://images.unsplash.com/photo-1582450871972-ab5ca641643d?w=600&auto=format&fit=crop&q=80' },
       { id: 'v4_2', weight: '250g', price: 68000, stockStatus: 'tersedia', image: 'https://images.unsplash.com/photo-1544025162-d76694265947?w=600&auto=format&fit=crop&q=80' },
@@ -79,20 +75,17 @@ export const products: Product[] = [
   },
   {
     id: '5',
-    name: 'Serundeng Kelapa Original',
-    slug: 'serundeng-kelapa-original',
+    name: 'Serundeng Original',
+    slug: 'serundeng-original',
     category: 'serundeng',
     description: 'Serundeng kelapa parut tradisional dipadu bumbu rempah pilihan khas nusantara, beraroma harum dan gurih renyah.',
     ingredients: ['Kelapa Parut Pilihan', 'Bawang Merah', 'Bawang Putih', 'Gula', 'Ketumbar', 'Garam'],
-    image: 'https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600&auto=format&fit=crop&q=80',
-    gallery: ['https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600&auto=format&fit=crop&q=80'],
+    image: '/assets/serundeng/serundeng-ps-mas-100g.png',
+    gallery: ['/assets/serundeng/serundeng-ps-mas-100g.png'],
     variants: [
-      { id: 'v5_1', weight: '100g', price: 15000, stockStatus: 'tersedia', image: 'https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600&auto=format&fit=crop&q=80' },
-      { id: 'v5_2', weight: '250g', price: 34000, stockStatus: 'tersedia', image: 'https://images.unsplash.com/photo-1544025162-d76694265947?w=600&auto=format&fit=crop&q=80' },
-      { id: 'v5_3', weight: '1kg', price: 125000, stockStatus: 'tersedia', image: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&auto=format&fit=crop&q=80' },
-      { id: 'v5_4', weight: '5kg', price: 590000, stockStatus: 'tersedia', image: 'https://images.unsplash.com/photo-1604503468506-a8da13d82791?w=600&auto=format&fit=crop&q=80' },
-      { id: 'v5_5', weight: 'pouch 80g', price: 13000, stockStatus: 'tersedia', image: 'https://images.unsplash.com/photo-1612240498936-65f5101365d2?w=600&auto=format&fit=crop&q=80' },
-      { id: 'v5_6', weight: 'toples 220g', price: 32000, stockStatus: 'tersedia', image: 'https://images.unsplash.com/photo-1536680465769-2365207b035e?w=600&auto=format&fit=crop&q=80' }
+      { id: 'v5_1', weight: '100g', price: 15000, stockStatus: 'tersedia', image: '/assets/serundeng/serundeng-ps-mas-100g.png' },
+      { id: 'v5_2', weight: 'toples 220g', price: 34000, stockStatus: 'tersedia', image: '/assets/serundeng/serundeng-ps-mas-220g.png' },
+      { id: 'v5_3', weight: '250g', price: 125000, stockStatus: 'tersedia', image: '/assets/serundeng/serundeng-ps-mas-250g.png' },
     ],
     relatedProductIds: ['6', '1']
   },
@@ -117,15 +110,15 @@ export const products: Product[] = [
   },
   {
     id: '7',
-    name: 'Dendeng Sapi Premium',
-    slug: 'dendeng-sapi-premium',
+    name: 'Dendeng Sapi',
+    slug: 'dendeng-sapi',
     category: 'lainnya',
     description: 'Olahan tipis daging sapi berkualitas premium yang dikeringkan dengan paduan bumbu manis gurih ketumbar tradisional.',
     ingredients: ['Daging Sapi Murni', 'Ketumbar', 'Gula Merah', 'Bawang Putih', 'Garam'],
-    image: 'https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?w=600&auto=format&fit=crop&q=80',
-    gallery: ['https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?w=600&auto=format&fit=crop&q=80'],
+    image: '/assets/otherproduct/dendeng-sapi-ps-mas-250g.png',
+    gallery: ['/assets/otherproduct/dendeng-sapi-ps-mas-250g.png'],
     variants: [
-      { id: 'v7_1', weight: '250g', price: 95000, stockStatus: 'tersedia', image: 'https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?w=600&auto=format&fit=crop&q=80' }
+      { id: 'v7_1', weight: '250g', price: 95000, stockStatus: 'tersedia', image: '/assets/otherproduct/dendeng-sapi-ps-mas-250g.png' }
     ],
     relatedProductIds: ['1', '8']
   },
@@ -136,10 +129,10 @@ export const products: Product[] = [
     category: 'lainnya',
     description: 'Kentang mustofa/klengkam renyah berbalur bumbu caramel manis pedas wangi daun jeruk yang sangat gurih.',
     ingredients: ['Kentang Pilihan', 'Cabai', 'Bawang Merah', 'Gula Merah', 'Garam', 'Daun Jeruk'],
-    image: 'https://images.unsplash.com/photo-1536680465769-2365207b035e?w=600&auto=format&fit=crop&q=80',
-    gallery: ['https://images.unsplash.com/photo-1536680465769-2365207b035e?w=600&auto=format&fit=crop&q=80'],
+    image: '/assets/otherproduct/klengkam-ps-mas-100g.png',
+    gallery: ['/assets/otherproduct/klengkam-ps-mas-100g.png'],
     variants: [
-      { id: 'v8_1', weight: '100g', price: 22000, stockStatus: 'tersedia', image: 'https://images.unsplash.com/photo-1536680465769-2365207b035e?w=600&auto=format&fit=crop&q=80' }
+      { id: 'v8_1', weight: '100g', price: 22000, stockStatus: 'tersedia', image: '/assets/otherproduct/klengkam-ps-mas-100g.png' }
     ],
     relatedProductIds: ['3', '7']
   }

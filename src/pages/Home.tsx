@@ -262,7 +262,7 @@ export default function Home() {
               className="group relative h-56 sm:h-64 rounded-3xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 active:scale-95 flex flex-col justify-end p-6 text-white"
             >
               <img
-                src={cat.img}
+                src={'/assets/abon-ayam/abon-ayam-original-ps-mas-80g.png'}
                 alt={cat.name}
                 className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               />
